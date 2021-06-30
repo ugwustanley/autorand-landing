@@ -1,0 +1,339 @@
+:root{
+
+
+    --light-green  :#14be1a;
+    --blue         :#301a96;
+}
+body{
+    padding:0;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Mulish' , sans-serif;
+    background-color: var(--blue);
+    /* #f7f7f7 Your weeekly Salary  #301a96*/
+}
+
+.main{
+    width:100%;
+    overflow:hidden;
+}
+.background{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background-image: url("https://uploads-ssl.webflow.com/604a1aec2923ec1497d21ac3/604a89cc25fb0fa1674db979_Pattern.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: .06;
+}
+.main{
+     z-index:1;  
+}
+nav{
+    /* background-color: #301a96;  */
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+nav button{
+    border:3px solid var(--light-green);
+    background-color: transparent;
+    color:#fff;
+    font-weight: 600;
+    transition:.3s;
+}
+nav button:hover{
+  background:var(--light-green);
+}
+.link{
+    font-size:17px;
+    font-weight:600;
+}
+.ph-android-logo-fill{
+    color:#3ddc84;
+    font-size:40px;
+}
+.ph-apple-logo-fill{
+    color:#555555;
+    font-size:40px;
+}
+.playstore , .appstore {
+    background:black;
+    padding:8px 8px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:900;
+    color:#fff;
+    display:flex;
+    width:170px;
+    height:50px;
+    margin:0px 10px;
+    margin-top:20px;
+}
+.playstore div, .appstore div{
+   margin-left:5px;
+ }
+.playstore div p , .appstore div p{
+   margin:0;
+   padding:0;
+   font-size:11px;
+   text-align:left;
+}
+
+.playstore div h5 , .appstore  div h5{
+    margin:0;
+    padding:0;
+    line-height:0;
+    text-align:left;
+    margin-top:8px;
+    font-size:18px;
+ }
+.intro h1{
+    font-size:60px;
+    font-weight:900;
+    color:#fff;
+    text-align:center;
+    max-width:650px;
+    margin:auto;
+    margin-top:150px;
+    line-height:50px;
+
+}
+.logo_img{
+    width:100px;
+}
+.intro p{
+    color:#fff;
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    margin-top:30px;
+}
+.nav_links{
+    margin-left:100px;
+}
+
+
+/* Features section */
+.features{
+    margin-top:80px;
+    padding:80px;
+}
+.features h2{
+    text-align:center;
+    font-size:33px;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:30px;
+    /* color:rgb(221, 218, 218); */
+}
+.feature__detail{
+    display:flex;
+    justify-content: space-between;
+    color:#fff;
+    align-items:center;
+    margin-top:140px;
+    flex-wrap:wrap;
+}
+.feature__detail img{
+   max-width:600px;
+   margin-right:20px;
+}
+
+.feature__detail div{
+    max-width:500px;
+    margin-left:20px;
+ }
+
+ 
+.features h3{
+    font-size:30px;
+    color:rgb(221, 218, 218);
+    text-align:center;
+    margin-top:50px;
+ }
+
+ .feature__detail p{
+    color:rgb(241, 239, 239);
+    line-height: 25px;
+ }
+
+ .feature__detail2 {
+    text-align: right;
+ }
+
+/* footer */
+.footer{
+    border-top:2px solid #fff;
+    margin-top:20px;
+    text-align:center;
+    padding:20px;
+}
+.social{
+    display:flex;
+    justify-content:center;
+ 
+}
+.social img{
+    width:40px;
+    margin:0 10px;
+    border-radius:50%;
+    padding:10px;
+    background:white;
+}
+
+.footer h4{
+    color:#fff;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.footer p{
+    color:rgb(163, 161, 161);
+    font-size:13px;
+    font-weight: 600;
+    margin-top:10px;
+}
+
+@media (max-width:800px){
+    .intro h1{
+        font-size:40px;
+        padding:20px;
+        font-weight:900;
+        color:#fff;
+        text-align:center;
+        max-width:600px;
+        margin:auto;
+        margin-top:50px;
+        line-height:40px;
+    }
+    .nav_links{
+        display:none;
+    }
+    .features{
+        padding:0 10px;
+    }
+    .feature__detail{
+        margin-top:100px !important;
+        padding:0px;
+    }
+    .feature__detail img{
+       width:100%;
+       padding:0px 0px;
+    
+    }
+    .feature__detail div{
+        width:100%;
+        text-align:center;
+        margin-top:100px !important;
+     }
+    .feature__detail2{
+        flex-wrap:wrap-reverse;
+    }
+}
+
+@media (max-width:600px){
+    .nav{
+        padding-left:10px !important;
+        padding-right:10px !important;
+    }
+    .intro p{
+        color:#fff;
+        text-align:center;
+        max-width:700px;
+        margin:auto;
+        margin-top:10px;
+        font-size:13px;
+        padding:0px 10px;
+    }
+    .logo_img{
+        width:70px;
+    }
+    nav button{
+      border:2px solid var(--light-green);
+       padding:8px 20px !important;
+       font-size:13px;
+    }
+    .intro h1{
+        font-size:30px;
+        padding:0 20px;
+        margin-top:0px;
+        line-height:30px;
+    }
+    .intro{
+        margin-bottom:0px;
+        display:grid;
+        height:calc(100vh - 100px);
+        place-content:center;
+    }
+    .ph-android-logo-fill{
+        font-size:30px;
+    }
+    .ph-apple-logo-fill{
+        color:#555555;
+        font-size:30px;
+    }
+    .playstore , .appstore {
+        padding:8px 8px;
+        width:135px;
+        min-height:0px;
+        margin:0px 5px;
+        margin-top:20px;
+    }
+    .playstore div, .appstore div{
+       margin-left:5px;
+     }
+    .playstore div p , .appstore div p{
+       margin:0;
+       padding:0;
+       font-size:9px;
+       text-align:left;
+    }
+    
+    .playstore div h5 , .appstore  div h5{
+        margin:0;
+        padding:0;
+        line-height:0;
+        text-align:left;
+        margin-top:8px;
+        font-size:14px;
+     }
+     .intro_main{
+         margin-top:-100px;
+     }
+     .features{
+         margin-top:-20px;
+     }
+     .feature__detail div{
+         margin:0;
+     }
+     .feature__detail div{
+        padding:0;
+    }
+    .features h3{
+         text-align:center;
+        font-size:27px;
+        font-weight:800;
+        color:rgb(221, 218, 218);
+     }
+    
+     .feature__detail p{
+        color:rgb(241, 239, 239);
+        line-height: 25px;
+        padding:0;
+        font-weight:500;
+        font-size:15px;
+     }
+     .footer{
+         margin-top:120px;
+     }
+     .features h2{
+        font-size:27px;
+        font-weight:700;
+        /* color:rgb(221, 218, 218); */
+    }
+    
+     
+}
